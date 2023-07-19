@@ -1,35 +1,10 @@
 @import 'reset.css';
+@import 'fonts.css';
 
 :root {
   --index: calc(1vw + 1vh);
   --color-bg: #fafafa;
   --color-text: #203844;
-}
-
-@font-face {
-  font-family: primary;
-  src: url(../assets/fonts/Inter-Regular.ttf);
-}
-
-@font-face {
-  font-family: primary-semibold;
-  src: url(/assets/fonts/Inter-SemiBold.ttf);
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: primary-bold;
-  src: url(/assets/fonts/Inter-Bold.ttf);
-  font-family: bold;
-}
-
-@font-face {
-  font-family: secondary;
-  src: url(/assets/fonts/FiraMono-Regular.ttf);
-}
-@font-face {
-  font-family: secondary-medium;
-  src: url(/assets/fonts/FiraMono-Medium.ttf);
 }
 
 body {
@@ -68,20 +43,11 @@ body {
   transition: opacity 3s ease-in-out;
 }
 
-.header__container {
-  padding: 3rem 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-.dummy-title__image {
+.main-content__image {
   width: 100%;
 }
 
 .footer__container {
-  padding: 2.5rem 0;
-  display: flex;
-  justify-content: space-between;
   font-family: primary;
   border-top: 1px solid var(--color-text);
 }
@@ -98,5 +64,7 @@ body {
 }
 
 .container {
-  margin: 0 0 48px 0;
+  padding: 48px 0;
+  display: flex;
+  justify-content: space-between;
 }
