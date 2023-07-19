@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font: inherit;
+}
+
+ol,
+ul {
+  list-style: none;
+  /* display: block; */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

@@ -1,0 +1,102 @@
+@import 'reset.css';
+
+:root {
+  --index: calc(1vw + 1vh);
+  --color-bg: #fafafa;
+  --color-text: #203844;
+}
+
+@font-face {
+  font-family: primary;
+  src: url(../assets/fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: primary-semibold;
+  src: url(/assets/fonts/Inter-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: primary-bold;
+  src: url(/assets/fonts/Inter-Bold.ttf);
+  font-family: bold;
+}
+
+@font-face {
+  font-family: secondary;
+  src: url(/assets/fonts/FiraMono-Regular.ttf);
+}
+@font-face {
+  font-family: secondary-medium;
+  src: url(/assets/fonts/FiraMono-Medium.ttf);
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: primary;
+}
+
+.wrapper {
+  padding: 0 2.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo__image {
+  /* width: 20rem; */
+  width: calc(var(--index) * 14);
+}
+
+.header__links {
+  display: flex;
+  flex-direction: row;
+}
+
+.header__links > li {
+  font-family: primary;
+  font-size: 1rem;
+  padding-left: 2rem;
+  cursor: pointer;
+}
+
+.header__links > li:hover {
+  opacity: 0.7;
+  transition: opacity 3s ease-in-out;
+}
+
+.header__container {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dummy-title__image {
+  width: 100%;
+}
+
+.footer__container {
+  padding: 2.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  font-family: primary;
+  border-top: 1px solid var(--color-text);
+}
+
+.main-content__heading {
+  text-transform: uppercase;
+  font-family: secondary;
+  font-size: calc(var(--index) * 0.8);
+}
+
+.design-logo {
+  color: inherit;
+  max-width: 2.8rem;
+}
+
+.container {
+  margin: 0 0 48px 0;
+}
