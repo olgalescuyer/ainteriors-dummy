@@ -1,3 +1,4 @@
+// countdown timer management system:
 const countDownDate = new Date('Oct 1, 2023 15:00:00').getTime();
 
 // console.log(countDownDate);
@@ -23,3 +24,25 @@ const update = setInterval(() => {
     document.getElementById('timer').innerHTML = 'EXPIRED';
   }
 }, 1000);
+
+// modal management system:
+
+const modal = document.getElementById('modal');
+console.log(modal);
+
+const modalOpenBtn = document.getElementById('modal-open');
+
+const modalCloseBtn = document.getElementById('modal-close');
+
+modalOpenBtn.addEventListener('click', open);
+modalCloseBtn.addEventListener('click', close);
+
+function open(e) {
+  e.preventDefault();
+  modal.classList.add('modal--open');
+}
+
+function close(e) {
+  e.preventDefault();
+  modal.classList.remove('modal--open');
+}
