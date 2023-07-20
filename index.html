@@ -39,7 +39,7 @@
   <body>
     <div class="wrapper">
       <header>
-        <div class="header">
+        <div class="container header">
           <div class="logo__container">
             <img
               src="/assets/logos/logo.svg"
@@ -48,34 +48,34 @@
             />
           </div>
 
-          <ul class="header__links">
-            <li><a href="mailto:yanastyle@me.com">Mail</a></li>
-            <li>
-              <a href="http://" target="_blank" rel="noopener noreferrer"
-                >Instagram</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.facebook.com/profile.php?id=100083580677331"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Facebook</a
-              >
-            </li>
-            <li>
-              <a href="http://" target="_blank" rel="noopener noreferrer"
-                >Pinterest</a
-              >
-            </li>
-            <a href="mailto:"></a>
-          </ul>
+          <button
+            aria-label="principal menu"
+            aria-expanded="false"
+            class="menu"
+            id="menu-open"
+          >
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 64 64"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.667 21.3334H53.3337M10.667 42.6667H53.3337"
+                stroke="#203844"
+                stroke-width="4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
         </div>
       </header>
 
       <div>
         <main>
-          <div class="main-content">
+          <div class="container main-content">
             <h1 class="main-content__heading">
               INTERIOR AND INDUSTRIAL DESIGNER <br />FOCUSED ON TIDYING SERVICES
               in Andorra
@@ -95,7 +95,7 @@
         </main>
 
         <footer>
-          <div class="footer">
+          <div class="container footer">
             <span>© AINTERIORS 2023. All rights reserved</span>
             <a
               href="http://olga-lescuyer.fr"
@@ -115,6 +115,72 @@
             </a>
           </div>
         </footer>
+      </div>
+
+      <div class="modal" id="modal">
+        <header>
+          <div class="container header">
+            <div class="logo__container">
+              <img
+                src="/assets/logos/logo-light.svg"
+                alt="logo Yana Interiors"
+                class="logo__image"
+              />
+            </div>
+
+            <button
+              aria-label="principal menu"
+              aria-expanded="false"
+              class="menu"
+              id="menu-close"
+            >
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 36 36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M27 9L9 27M9 9L27 27"
+                  stroke="#fafafa"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </header>
+
+        <ul class="modal__links">
+          <li><a href="mailto:yanastyle@me.com">Mail</a></li>
+          <li>
+            <a
+              href="https://www.instagram.com/ainteriors.and/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/profile.php?id=100083580677331"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.pinterest.fr/YanaInteriors/?invite_code=fd9ed2523ab44ff783b0917b33dd0ce8&sender=437834532431903730"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Pinterest</a
+            >
+          </li>
+          <a href="mailto:"></a>
+        </ul>
       </div>
     </div>
   </body>
