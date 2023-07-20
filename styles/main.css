@@ -2,16 +2,16 @@
 
 @font-face {
   font-family: primary;
-  src: url(../assets/fonts/Inter-Regular.ttf);
+  src: url(../fonts/Inter-Regular.ttf);
 }
 
 @font-face {
   font-family: secondary;
-  src: url(/assets/fonts/FiraMono-Regular.ttf);
+  src: url(/fonts/FiraMono-Regular.ttf);
 }
 @font-face {
   font-family: secondary-medium;
-  src: url(/assets/fonts/FiraMono-Medium.ttf);
+  src: url(/fonts/FiraMono-Medium.ttf);
 }
 
 :root {
