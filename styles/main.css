@@ -46,10 +46,10 @@ body {
 }
 
 .header {
+  padding: 1 O;
   align-items: center;
 }
 
-.header,
 .image__container {
   padding: 3rem 0;
 }
@@ -173,6 +173,9 @@ body {
 /* Mobile first paradigme */
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
+  .hedear {
+    padding: 3rem 0;
+  }
   .main-container {
     margin: 0 2.5rem;
   }
