@@ -59,14 +59,18 @@ body {
 }
 
 .main-content {
-  font-family: secondary;
   font-size: calc(var(--index) * 0.8);
   display: flex;
   flex-direction: column;
 }
 
 .main-content__heading {
+  font-family: secondary;
   text-transform: uppercase;
+}
+
+.timer {
+  font-family: secondary;
 }
 
 .main-content__image {
