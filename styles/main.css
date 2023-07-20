@@ -20,13 +20,18 @@
   --color-dark: #203844;
 }
 
+html {
+  height: -webkit-fill-available;
+}
+
 body {
   background-color: var(--color-light);
   color: var(--color-dark);
   font-family: primary;
-  overflow-x: hidden;
-  overflow-y: auto;
+
+  overflow-y: scroll;
   height: 100vh;
+  height: -webkit-fill-available;
 }
 
 .wrapper {
