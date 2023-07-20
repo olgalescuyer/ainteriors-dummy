@@ -81,7 +81,7 @@ body {
 
 .footer {
   padding: 1.5rem 0;
-
+  font-size: calc(var(--index) * 0.8);
   border-top: 1px solid var(--color-dark);
 }
 
@@ -173,7 +173,7 @@ body {
 /* Mobile first paradigme */
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
-  .hedear {
+  .header {
     padding: 3rem 0;
   }
   .main-container {
