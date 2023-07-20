@@ -7,11 +7,11 @@
 
 @font-face {
   font-family: secondary;
-  src: url(/fonts/FiraMono-Regular.ttf);
+  src: url(../fonts/FiraMono-Regular.ttf);
 }
 @font-face {
   font-family: secondary-medium;
-  src: url(/fonts/FiraMono-Medium.ttf);
+  src: url(../fonts/FiraMono-Medium.ttf);
 }
 
 :root {
