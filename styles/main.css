@@ -11,25 +11,23 @@ body {
   background-color: var(--color-light);
   color: var(--color-dark);
   font-family: primary;
+  overflow-x: hidden;
 }
 
 .wrapper {
+  height: 100%;
+}
+
+.main-container {
+  margin: 0 1rem;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.logo__image {
-  width: calc(var(--index) * 14);
-}
-
 .header,
-.image__container {
-  padding: 3rem 2.5rem;
-}
-
-.container {
+.footer {
   display: flex;
   justify-content: space-between;
 }
@@ -38,14 +36,20 @@ body {
   align-items: center;
 }
 
-.menu {
-  cursor: pointer;
+.header,
+.image__container {
+  padding: 3rem 0;
+}
+
+.logo__image {
+  width: calc(var(--index) * 14);
 }
 
 .main-content {
-  padding: 0 2.5rem;
   font-family: secondary;
   font-size: calc(var(--index) * 0.8);
+  display: flex;
+  flex-direction: column;
 }
 
 .main-content__heading {
@@ -59,17 +63,22 @@ body {
 .timer-container {
   display: flex;
   align-items: end;
+  margin-bottom: 2.5rem;
 }
 
 .footer {
-  padding: 1.5rem 3rem;
+  padding: 1.5rem 0;
+
   border-top: 1px solid var(--color-dark);
 }
 
 .modal {
-  position: absolute;
   height: 100%;
   width: 100%;
+  padding: 0 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: 1;
   background-color: var(--color-dark);
   color: var(--color-light);
@@ -81,20 +90,92 @@ body {
   transform: translateY(0);
 }
 
-.modal__links {
-  padding: 0 2.5rem;
-}
-
 .modal__links > li {
   font-size: calc(var(--index) * 4);
   text-transform: uppercase;
-  cursor: pointer;
   font-weight: bold;
   color: (var(--color-light));
 }
 
-/* logo of designer */
+.modal__links > li:hover .underline {
+  animation: 2s ease-in-out expanded-line;
+  transform-origin: 0% 100%;
+}
+
+.underline {
+  height: 1px;
+  width: 100%;
+  background-color: var(--color-light);
+  transform: scaleX(0);
+}
+
+@keyframes expanded-line {
+  0% {
+    transform: scaleX(0.1);
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 0;
+  }
+}
+
+.show {
+  animation: 2s ease-in-out text-shown;
+}
+
+@keyframes text-shown {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hide {
+  animation: 2s ease-in-out text-hidden;
+}
+
+@keyframes text-hidden {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* designer's logo */
 .design-logo {
   color: inherit;
   max-width: 2.8rem;
+}
+
+/* Mobile first paradigme */
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  .main-container {
+    margin: 0 2.5rem;
+  }
+  .modal {
+    padding: 0 2.5rem 2.5rem;
+  }
+  .timer-container {
+    margin-bottom: 0;
+  }
+
+  .main-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-content :nth-child(2) {
+    order: -1;
+  }
 }

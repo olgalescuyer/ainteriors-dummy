@@ -39,88 +39,90 @@
 
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container header">
-          <div class="logo__container">
-            <img
-              src="/assets/logos/logo.svg"
-              alt="logo Yana Interiors"
-              class="logo__image"
-            />
-          </div>
-
-          <button
-            aria-label="principal menu"
-            aria-expanded="false"
-            class="menu"
-            id="modal-open"
-          >
-            <svg
-              width="48"
-              height="48"
-              viewBox="0 0 64 64"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M10.667 21.3334H53.3337M10.667 42.6667H53.3337"
-                stroke="#203844"
-                stroke-width="4"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </button>
-        </div>
-      </header>
-
-      <div>
-        <main>
-          <div class="container main-content">
-            <h1 class="main-content__heading">
-              INTERIOR AND INDUSTRIAL DESIGNER <br />FOCUSED ON TIDYING SERVICES
-              in Andorra
-            </h1>
-            <div class="timer-container">
-              <div class="timer" id="timer">...</div>
-            </div>
-          </div>
-
-          <div class="image__container">
-            <img
-              src="/assets/images/dummy-title.svg"
-              alt="coming soon"
-              class="main-content__image"
-            />
-          </div>
-        </main>
-
-        <footer>
-          <div class="container footer">
-            <span>© AINTERIORS 2023. All rights reserved</span>
-            <a
-              href="http://olga-lescuyer.fr"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div>
-                Designed & Developed by
-                <span>
-                  <img
-                    src="/assets/logos/wdc-logo.svg"
-                    alt="design studio logo"
-                    class="design-logo"
-                  />
-                </span>
-              </div>
-            </a>
-          </div>
-        </footer>
-      </div>
-
-      <div class="modal" id="modal">
+      <div class="main-container">
         <header>
-          <div class="container header">
+          <div class="header">
+            <div class="logo__container">
+              <img
+                src="/assets/logos/logo.svg"
+                alt="logo Yana Interiors"
+                class="logo__image"
+              />
+            </div>
+
+            <button
+              type="button"
+              aria-label="principal menu"
+              aria-expanded="false"
+              class="modal__button"
+              id="modal-open"
+            >
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.667 21.3334H53.3337M10.667 42.6667H53.3337"
+                  stroke="#203844"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </header>
+
+        <div class="content-wrapper">
+          <main>
+            <div class="main-content">
+              <div class="timer-container">
+                <div class="timer" id="timer">...</div>
+              </div>
+              <h1 class="main-content__heading">
+                INTERIOR AND INDUSTRIAL DESIGNER <br />FOCUSED ON TIDYING
+                SERVICES in Andorra
+              </h1>
+            </div>
+
+            <div class="image__container">
+              <img
+                src="/assets/images/dummy-title.svg"
+                alt="coming soon"
+                class="main-content__image"
+              />
+            </div>
+          </main>
+
+          <footer>
+            <div class="footer">
+              <span>© 2023, AINTERIORS </span>
+              <a
+                href="http://olga-lescuyer.fr"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div>
+                  By
+                  <span>
+                    <img
+                      src="/assets/logos/wdc-logo.svg"
+                      alt="design studio logo"
+                      class="design-logo"
+                    />
+                  </span>
+                </div>
+              </a>
+            </div>
+          </footer>
+        </div>
+      </div>
+      <div role="dialog" aria-hidden="true" class="modal" id="modal">
+        <header>
+          <div class="header">
             <div class="logo__container">
               <img
                 src="/assets/logos/logo-light.svg"
@@ -130,9 +132,10 @@
             </div>
 
             <button
+              type="button"
               aria-label="principal menu"
               aria-expanded="false"
-              class="menu"
+              class="modal__button"
               id="modal-close"
             >
               <svg
@@ -155,7 +158,10 @@
         </header>
 
         <ul class="modal__links">
-          <li><a href="mailto:yanastyle@me.com">Mail</a></li>
+          <li class="">
+            <a href="mailto:yanastyle@me.com">Mail</a>
+            <div class="underline"></div>
+          </li>
           <li>
             <a
               href="https://www.instagram.com/ainteriors.and/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
@@ -163,6 +169,7 @@
               rel="noopener noreferrer"
               >Instagram</a
             >
+            <div class="underline"></div>
           </li>
           <li>
             <a
@@ -171,6 +178,7 @@
               rel="noopener noreferrer"
               >Facebook</a
             >
+            <div class="underline"></div>
           </li>
           <li>
             <a
@@ -179,8 +187,8 @@
               rel="noopener noreferrer"
               >Pinterest</a
             >
+            <div class="underline"></div>
           </li>
-          <a href="mailto:"></a>
         </ul>
       </div>
     </div>
