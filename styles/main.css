@@ -20,23 +20,11 @@
   --color-dark: #203844;
 }
 
-html {
-  height: -webkit-fill-available;
-}
-
 body {
   background-color: var(--color-light);
   color: var(--color-dark);
   font-family: primary;
-
   overflow-y: scroll;
-  height: 100vh;
-  height: -webkit-fill-available;
-  height: calc(var(--vh, 1vh) * 100);
-}
-
-.wrapper {
-  height: 100%;
 }
 
 .main-container {
@@ -45,6 +33,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 .header,
