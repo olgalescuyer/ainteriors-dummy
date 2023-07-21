@@ -2,16 +2,16 @@
 
 @font-face {
   font-family: primary;
-  src: url(../fonts/Inter-Regular.ttf);
+  src: url(../public/fonts/Inter-Regular.ttf);
 }
 
 @font-face {
   font-family: secondary;
-  src: url(../fonts/FiraMono-Regular.ttf);
+  src: url(../public/fonts/FiraMono-Regular.ttf);
 }
 @font-face {
   font-family: secondary-medium;
-  src: url(../fonts/FiraMono-Medium.ttf);
+  src: url(../public/fonts/FiraMono-Medium.ttf);
 }
 
 :root {
@@ -230,7 +230,7 @@ body {
     font-size: 0.9rem;
   }
 
-  .ctc-button {
+  /* .ctc-button {
     display: none;
-  }
+  } */
 }
