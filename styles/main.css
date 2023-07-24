@@ -122,6 +122,21 @@ body {
   padding: 1rem 0 0;
 }
 
+.ctc-button__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ctc-button__icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.ctc-button__icon {
+  width: 24px;
+  color: var(--color-light);
+}
+
 .modal__links > li {
   font-size: calc(var(--vh, 1vh) * 7);
   text-transform: uppercase;
@@ -230,7 +245,8 @@ body {
     font-size: 0.9rem;
   }
 
-  /* .ctc-button {
-    display: none;
-  } */
+  .arrow-icon {
+    width: 32px;
+    height: 32px;
+  }
 }
