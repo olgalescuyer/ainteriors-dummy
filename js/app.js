@@ -1,5 +1,5 @@
 // countdown timer management system:
-const countDownDate = new Date('Oct 1, 2023 15:00:00').getTime();
+const countDownDate = new Date('Oct 1, 2024 15:00:00').getTime();
 
 const update = setInterval(() => {
   const now = new Date().getTime();
